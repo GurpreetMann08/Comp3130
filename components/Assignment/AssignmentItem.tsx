@@ -10,7 +10,6 @@ type Props = {
   handleDeleteButton :(id: number) => void;
 }
 
-
 export function AssignmentItem({ assignment, handleAssignmentClick, handleDeleteButton  }: Props) {
 
 const [completedAssignmentButton, setCompletedAssignmentButton] = useState(false);
@@ -18,7 +17,6 @@ const [completedAssignmentButton, setCompletedAssignmentButton] = useState(false
 const handleButtonClick = () =>{
   setCompletedAssignmentButton(true);
   handleAssignmentClick(assignment.id)
-
 }
 
   return (
